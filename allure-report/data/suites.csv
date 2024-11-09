@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","13814","should complete a purchase successfully with performance glitch user","","Sat Nov 09 23:14:09 BDT 2024","passed","Sat Nov 09 23:14:23 BDT 2024","","Performance Glitch User Purchase Test","",""
+"","1792","should show an error message for locked out user","","Sat Nov 09 23:14:09 BDT 2024","passed","Sat Nov 09 23:14:11 BDT 2024","","Locked Out User Test","",""
+"","3322","should complete a purchase successfully","","Sat Nov 09 23:14:09 BDT 2024","passed","Sat Nov 09 23:14:13 BDT 2024","","Standard User Purchase Test","",""
