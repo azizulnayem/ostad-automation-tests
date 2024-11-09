@@ -56,7 +56,7 @@ Before starting, make sure you have the following installed:
    
 ## Initialize a Node.js Project
 
-1. **Navigate to your project directory and run**:
+**Navigate to your project directory and run**:
    ```bash
    npm init -y
    
@@ -66,7 +66,45 @@ Before starting, make sure you have the following installed:
  ```bash
 npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/allure-reporter @wdio/spec-reporter @wdio/selenium-standalone-service
 
+## Configure WebDriverIO
 
+**Run the following command to configure WebDriverIO**:
+ ```bash
+npx wdio config
+
+### During the configuration process, you'll be prompted with several questions. Here's an example of how to respond:
+1. A project named "last-try" was detected at "C:\Users\DCL\OneDrive\Desktop\last try", correct?
+Answer: yes
+2. What type of testing would you like to do?
+Answer: E2E Testing - of Web or Mobile Applications
+3. Where is your automation backend located?
+Answer: On my local machine
+4. Which environment you would like to automate?
+Answer: Web - web applications in the browser
+5. With which browser should we start?
+Answer: Choose your preferred browser (e.g., Chrome).
+6. Which framework do you want to use?
+Answer: Mocha (https://mochajs.org/)
+7. Do you want to use Typescript to write tests?
+Answer: no
+8. Do you want WebDriverIO to autogenerate some test files?
+Answer: yes
+9. What should be the location of your spec files?
+Answer: C:\Users\DCL\OneDrive\Desktop\last try\test\specs\**\*.js
+10. Do you want to use page objects (https://martinfowler.com/bliki/PageObject.html)?
+Answer: yes
+11. Where are your page objects located?
+Answer: C:\Users\DCL\OneDrive\Desktop\last try\test\pageobjects\**\*.js
+12. Which reporter do you want to use?
+Answer: Select Allure Reporter or your preferred option.
+13. Do you want to add a plugin to your test setup?
+Answer: yes
+14. Would you like to include Visual Testing to your setup?
+Answer: yes
+15. Do you want to add a service to your test setup?
+Answer: yes
+16. Would you like me to run npm install?
+Answer: yes
 
 
 
