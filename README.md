@@ -49,4 +49,26 @@ Before starting, make sure you have the following installed:
    nvm install <latest-version>
    nvm use <latest-version>
 
+2. **Check Installed Versions: After upgrading, verify the Node.js and npm versions**:
+   ```bash
+   node -v
+   npm -v
    
+## Initialize a Node.js Project
+
+1. **Navigate to your project directory and run**:
+   ```bash
+   npm init -y
+   
+## Install WebDriverIO and Allure Reporter
+
+**Run the following command to install WebDriverIO and Allure Reporter along with the necessary services**:
+ ```bash
+npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/allure-reporter @wdio/spec-reporter @wdio/selenium-standalone-service
+
+
+
+
+
+
+
