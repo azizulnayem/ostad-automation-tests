@@ -151,7 +151,7 @@ Answer: yes
 If you see a server address in your terminal like this, it indicates that the WebDriverIO server has started successfully. To stop it, press:
 
     ```bash
-    Ctrl+C
+     Ctrl+C
    
 ### 2. **npm Registry Misconfiguration**
    
@@ -170,14 +170,14 @@ If you see a server address in your terminal like this, it indicates that the We
 If issues persist, clear the npm cache using the following command:
 
     ```bash
-    npm cache clean --force
+     npm cache clean --force
 
 ### 4. **Install Allure Command Line**
 
 If Allure command line tools are missing, install them globally with the following command:
-   
+    
     ```bash
-    npm install -g allure-commandline --save-dev
+     npm install -g allure-commandline --save-dev
 
 ### 5. **Update JAVA_HOME Environment Variable**
 
@@ -190,7 +190,7 @@ If you encounter issues with Allure or Java, ensure that the `JAVA_HOME` environ
 4. Set the **variable name** as `JAVA_HOME` and **value** to the path of your JDK (e.g., `C:\Program Files\Java\jdk-20.0.2`).
 5. Click **OK** to save the changes.
   
-   1. ****To check the `JAVA_HOME` variable**:
+   1. **To check the `JAVA_HOME` variable**:
       ```bash
       echo %JAVA_HOME%
 
