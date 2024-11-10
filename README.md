@@ -1,6 +1,6 @@
 # Sauce Demo Automation Test Suite
 
-This project contains automated end-to-end tests for the Sauce Demo website using WebDriverIO. The tests are written in JavaScript and utilize the Mocha framework for test execution.
+This project contains automated end-to-end tests for the [Sauce Demo](https://www.saucedemo.com/) website using WebDriverIO. The tests are written in JavaScript and utilize the Mocha framework for test execution.
 
 ## Test Cases
 
@@ -155,27 +155,27 @@ Answer: yes
 3. **npm Registry Misconfiguration**
    
    If you encounter issues with npm registry, check if the registry is correctly configured:
-    ```bash
-    npm config get registry
+     ```bash
+     npm config get registry
 
    If the output does not return https://registry.npmjs.org/, you can reset the registry to the default with the 
-   following command:
+   the following command:
      ```bash
-    npm config set registry https://registry.npmjs.org/
+     npm config set registry https://registry.npmjs.org/
     
-4. **Clearing npm Cache**
+5. **Clearing npm Cache**
    
    If issues persist, clear the npm cache using:
    ```bash
    npm cache clean --force
 
-5. **Install Allure Command Line**
+6. **Install Allure Command Line**
    
    If Allure command line tools are missing, install them globally:
    ```bash
    npm install -g allure-commandline --save-dev
 
-6. **Update JAVA_HOME Environment Variable**
+7. **Update JAVA_HOME Environment Variable**
    
    If you encounter issues with Allure or Java, make sure your JAVA_HOME environment variable is properly set.
    For Windows:
@@ -187,17 +187,17 @@ Answer: yes
    5. Click OK to save the changes.
   
    To check the JAVA_HOME variable:
-   ```bash
-   echo %JAVA_HOME%
+     ```bash
+     echo %JAVA_HOME%
 
    Also, verify your Java installation:
-   ```bash
-   java -version
+     ```bash
+     java -version
    
 ## Conclusion
 This section covers the installation, configuration, running tests, and troubleshooting, along with steps to set up the environment and dependencies for this WebDriverIO project.
 
-# Happy testing!😎
+# Happy Testing!😎
 
    
 
