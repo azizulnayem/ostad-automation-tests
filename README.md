@@ -42,7 +42,7 @@ Before starting, make sure you have the following installed:
 - [npm](https://www.npmjs.com/)
 - Java Development Kit (JDK) (for Allure Reports)
 
-### Steps to Upgrade Node.js
+## Steps to Upgrade Node.js
 
 1. **Install the Latest Node.js Version Using NVM**:
    ```bash
@@ -54,23 +54,24 @@ Before starting, make sure you have the following installed:
    node -v
    npm -v
    
-#### Initialize a Node.js Project
+## Initialize a Node.js Project
 
 1. **Navigate to your project directory and run**:
    ```bash
    npm init -y
    
 ## Install WebDriverIO and Allure Reporter
- 
+
 1. **Run the following command to install WebDriverIO and Allure Reporter along with the necessary services**:
- ```bash
-npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/allure-reporter @wdio/spec-reporter @wdio/selenium-standalone-service
+   ```bash
+   npm install @wdio/cli @wdio/local-runner @wdio/mocha-framework @wdio/allure-reporter @wdio/spec-reporter
+   @wdio/selenium-standalone-service
 
 ## Configure WebDriverIO
 
 1. **Run the following command to configure WebDriverIO**:
- ```bash
-npx wdio config
+    ```bash
+    npx wdio config
 
 ### During the configuration process, you'll be prompted with several questions. Here's an example of how to respond:
 1. A project named "last-try" was detected at "C:\Users\DCL\OneDrive\Desktop\last try", correct?
@@ -107,36 +108,41 @@ Answer: yes
 Answer: yes
 
 ## Install Chromedriver Service
+
 1. **To install the Chromedriver service, run**:
- ```bash
-npm install wdio-chromedriver-service --save-dev
+   ```bash
+   npm install wdio-chromedriver-service --save-dev
 
 ## Install Chromedriver Binary
-1. **Install the chromedriver binary using**:
-```bash
-npm install chromedriver --save-dev
 
-### Running Tests Individually
-**To run specific test files, use the following commands**
-```bash
-1. npx wdio wdio.conf.js --spec ./test/specs/problemone.js
-2. npx wdio wdio.conf.js --spec ./test/specs/problemtwo.js
-3.npx wdio wdio.conf.js --spec ./test/specs/problemthree.js
+1. **Install the chromedriver binary using**:
+   ```bash
+   npm install chromedriver --save-dev
+
+## Running Tests Individually
+
+1. **To run specific test files, use the following commands**
+   ```bash
+   1. npx wdio wdio.conf.js --spec ./test/specs/problemone.js
+   2. npx wdio wdio.conf.js --spec ./test/specs/problemtwo.js
+   3. npx wdio wdio.conf.js --spec ./test/specs/problemthree.js
 
 ## Running All Tests Sequentially
-**To run all tests sequentially and generate the report, use**:
-```bash
-npx wdio run wdio.conf.js
+
+1. **To run all tests sequentially and generate the report, use**:
+   ```bash
+   npx wdio run wdio.conf.js
 
 ## View Allure Report
-**To view the Allure report after running the tests, use**:
+
 1. ***Generate the Allure Report**:
-```bash
-allure generate allure-results --clean -o allure-report
-
+   ```bash
+   allure generate allure-results --clean -o allure-report
+   
 2. **Open the Allure Report**:
-```bash
-allure open allure-report
+   ```bash
+   allure open allure-report
 
+# Troubleshooting
 
 
