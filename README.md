@@ -74,6 +74,7 @@ Before starting, make sure you have the following installed:
     npx wdio config
 
 ### During the configuration process, you'll be prompted with several questions. Here's an example of how to respond:
+
 1. A project named "last-try" was detected at "C:\Users\DCL\OneDrive\Desktop\last try", correct?
 Answer: yes
 2. What type of testing would you like to do?
@@ -145,57 +146,60 @@ Answer: yes
 
 # Troubleshooting
 
-1. **Server Started at http://192.168.56.1:6542/**
-   
-   If you see a server address in your terminal like this, it indicates that the WebDriverIO server has started 
-   successfully. To stop it, press
-   ```bash
-   Ctrl+C
-   
-3. **npm Registry Misconfiguration**
-   
-   If you encounter issues with npm registry, check if the registry is correctly configured:
-     ```bash
-     npm config get registry
+### 1. **Server Started at http://192.168.56.1:6542/**
 
-   If the output does not return https://registry.npmjs.org/, you can reset the registry to the default with the 
-   the following command:
-     ```bash
-     npm config set registry https://registry.npmjs.org/
+If you see a server address in your terminal like this, it indicates that the WebDriverIO server has started successfully. To stop it, press:
+
+    ```bash
+    Ctrl+C
+   
+### 2. **npm Registry Misconfiguration**
+   
+   1. **Check the current registry configuration**:
+      ```bash
+      npm config get registry
+
+   If the output is not https://registry.npmjs.org/, you’ll need to reset it.
+   
+   2. **Reset to the default registry**:
+      ```bash
+      npm config set registry https://registry.npmjs.org/
     
-5. **Clearing npm Cache**
-   
-   If issues persist, clear the npm cache using:
-   ```bash
-   npm cache clean --force
+### 3. **Clearing npm Cache**
 
-6. **Install Allure Command Line**
-   
-   If Allure command line tools are missing, install them globally:
-   ```bash
-   npm install -g allure-commandline --save-dev
+If issues persist, clear the npm cache using the following command:
 
-7. **Update JAVA_HOME Environment Variable**
+    ```bash
+    npm cache clean --force
+
+### 4. **Install Allure Command Line**
+
+If Allure command line tools are missing, install them globally with the following command:
    
-   If you encounter issues with Allure or Java, make sure your JAVA_HOME environment variable is properly set.
-   For Windows:
-   1. Press Win + R, type sysdm.cpl, and hit Enter.
-   2. Go to the Advanced tab and click on Environment Variables.
-   3. In the System variables section, look for JAVA_HOME. If it doesn't exist, click New.
-   4. Set the variable name as JAVA_HOME and the value to the path of your JDK (e.g., C:\Program Files\Java\jdk
-      20.0.2).
-   5. Click OK to save the changes.
+    ```bash
+    npm install -g allure-commandline --save-dev
+
+### 5. **Update JAVA_HOME Environment Variable**
+
+If you encounter issues with Allure or Java, ensure that the `JAVA_HOME` environment variable is correctly set.
+
+**For Windows**:
+1. Press `Win + R`, type `sysdm.cpl`, and press Enter.
+2. Go to the **Advanced** tab and click **Environment Variables**.
+3. In the **System variables** section, look for `JAVA_HOME`. If it doesn't exist, click **New**.
+4. Set the **variable name** as `JAVA_HOME` and **value** to the path of your JDK (e.g., `C:\Program Files\Java\jdk-20.0.2`).
+5. Click **OK** to save the changes.
   
-   To check the JAVA_HOME variable:
-     ```bash
-     echo %JAVA_HOME%
+   1. ****To check the `JAVA_HOME` variable**:
+      ```bash
+      echo %JAVA_HOME%
 
-   Also, verify your Java installation:
-     ```bash
-     java -version
+   2. **To verify your Java installation**:
+      ```bash
+      java -version
    
 ## Conclusion
-This section covers the installation, configuration, running tests, and troubleshooting, along with steps to set up the environment and dependencies for this WebDriverIO project.
+This guide provides a complete setup for installing, configuring, and running tests with WebDriverIO, including essential troubleshooting steps and environment setup. By following these steps, you’ll be well-equipped to execute automated tests smoothly and generate insightful reports for your project.
 
 # Happy Testing!😎
 
